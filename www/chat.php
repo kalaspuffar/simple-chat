@@ -24,7 +24,7 @@ if (isset($data->messages)) {
 function curlCall($url, $method, $headers, $data) {
     array_push($headers, 'Content-Type: application/json');
     array_push($headers, 'Content-Length: ' . strlen($data));
-    array_push($headers, 'User-Agent: YouTool/0.1');
+    array_push($headers, 'User-Agent: Chat/0.1');
 
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
